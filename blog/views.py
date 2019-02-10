@@ -5,7 +5,7 @@ from .models import Post
 def base(request):
     
     
-    return render(request, 'blog/base.html', {})
+    return render(request, 'blog/front.html', {})
 
 
 def blog_list(request):
