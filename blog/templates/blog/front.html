@@ -1,15 +1,31 @@
+
 {% extends 'blog/base.html' %}
+{% load static %}
 <html>
 	<body>
 		{% block content %}
 		<div>
-		<a href="http://catchsaurabh0209.pythonanywhere.com/blog/"> <img src="https://blogordietryin.files.wordpress.com/2012/06/life_improvement.png"
+		<!-- front image(architect) -->
+       <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+        <img class="w3-image" src="{% static 'architect.jpg' %}" alt="Architecture" width="1500" height="800">
+        <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Conqueror Of Next World</b></span> <span class="w3-hide-small w3-text-light-grey"> <!--something can be added here(it is going to be on front image --></span></h1>
+        </div>
+       </header>
+
+<!-- Page content -->
+        <div class="w3-content w3-padding" style="max-width:1564px">
+		<h1 style="font-family: verdana"> <center>1. Self_Improvement</center></h1>
+		<a href="http://catchsaurabh0209.pythonanywhere.com/blog/"> <img src="{% static 'Selfimprovement1.jpg' %}"
 
          alt="poor internet connection"
 			style = "width: 700px; height: 720px;border: 100;display: block;margin-right: auto;margin-left: auto">
         </a>
-        <h1 style="font-family: verdana"> <center>Self_Improvement</center></h1>
-        <h2 style="font-style: bold"> <center>Click on the image to watch blog OR Click on blog section in navbar</center> </h2>
+        <h1 style="font-family: verdana"> <center>2. Way_To_Computer_Science</center></h1>
+        <a href="http://catchsaurabh0209.pythonanywhere.com/blog1/"> <img src="{% static 'ComputerScience1.jpg' %}"
+
+         alt="poor internet connection"
+          style = "width: 700px; height: 720px;border: 100;display: block;margin-right: auto;margin-left: auto">
         </div>
         {% endblock %}
 	</body>

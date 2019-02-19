@@ -1,40 +1,27 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<style>
-		body {
-     background-color: light;
-    }
-	  ul {list-style-type: none;
-         margin: 0;
-         padding: 20;
-         overflow: hidden;
-         border: 10px solid #e7e7e7;
-         background-color: #f3f3f3;
-    }
-	  li{float: left;
-       }
-    li a{display:inline-block;
-         color: #666;
-         text-align: center;
-         padding: 14px 100px;
-         text-decoration: none;
-    }
-    li a:hover:not(.active){background-color: #ddd;}
-    li a.active{background-color: #4CAF50;
-                color:white;
-             }
-  </style>
-</head>
+<title>Saurabh's Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <body>
-  <ul>
-    <li><a class="active" href="http://catchsaurabh0209.pythonanywhere.com">Home</a></li>
-    <li><a href="http://catchsaurabh0209.pythonanywhere.com/blog">Blog</a></li>
-    <li><a href="http://www.quora.com/profile/Suman-Saurabh-213?ch=10&share=c279dee5&srid=pJdS4">Contact</a></li>
-    
-    
-  </ul>
+
+<!-- Navbar (sit on top) -->
+<div style="position: static;">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="http://catchsaurabh0209.pythonanywhere.com/" class="w3-bar-item w3-button"><b>SAURABH'S</b> Blog</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="http://catchsaurabh0209.pythonanywhere.com/blog1/" class="w3-bar-item w3-button">Recent Blog</a>
+      <a href="http://catchsaurabh0209.pythonanywhere.com/about/" class="w3-bar-item w3-button">About</a>
+      <a href="http://www.quora.com/profile/Suman-Saurabh-213?ch=10&share=c279dee5&srid=pJdS4" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
 	{% block content %}
-  {% endblock %}
+
+    {% endblock %}
 </body>
 
 </html>
